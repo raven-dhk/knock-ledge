@@ -1,1 +1,1 @@
-web: gunicorn knock-ledge.wsgi init:app
+web: gunicorn knockledge.wsgi init:app
