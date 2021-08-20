@@ -1,0 +1,285 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.section-bgc {
+  background-color: #000;
+}
+.kl-banner {
+  background: url("{% static '/images/Knock-ledge-backgroundimage1.png' %}") no-repeat center center; 
+  background-size: cover;
+  padding-top: 80px;
+  padding-left: 60px;
+  height: 240PX;
+}
+.nopadding {
+   padding: 0 !important;
+}
+
+.kl-banner-img1{
+  background: url("{% static '/images/Knock-ledge-image1.png' %}") no-repeat center center;
+  background-size: cover;
+}
+
+.kl-banner-img2{
+  background: url("{% static '/images/Knock-ledge-image2.png' %}") no-repeat center center; 
+  background-size: cover;
+}
+
+.kl-heading{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 40%;
+}
+
+.kl-heading2{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.kl-section1{
+  margin-bottom: 0rem !important;
+  background-color: #F6F6F6;
+}
+
+.kl-card{
+  width: 640px;
+  align-items: center;
+  margin:0 auto;
+}
+
+</style>
+
+<main role="main">
+
+  <section class="jumbotron text-center kl-section1">
+    <div class="container kl-heading">
+      <h1 class="jumbotron-heading">어디에 <mark>Knock</mark> 하고 싶으신가요?</h1>
+      <form class="form" >
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="검색어를 입력하세요!" aria-label="search" style="border-radius: 40px;" id="mysearch">
+            <div class="input-group-addon" style="margin-left: -50px; z-index: 3; border-radius: 40px; background-color: transparent; border:none; padding-top: 3px">
+              <button class="btn btn-warning btn-sm" type="submit" style="border-radius: 20px;" id="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 center-block kl-banner">
+            <p style="color:white;">당신이 보고프던 강의</p>
+            <h2 style="color:white;">아티스트 오수지의 수채화 드로잉렉쳐</h2>
+        </div>
+
+        <div class="col-md-2 kl-banner-img1">
+        </div>
+
+        <div class="col-md-2 kl-banner-img2">
+        </div>
+    </div>
+  </div>
+
+  <section class="kl-section1">
+    <div class="container center-block text-center kl-heading2">
+      <img src="{% static '/images/Knock-ledge-component1.png' %}" alt="image" height="24">
+      <h2 style="padding-bottom:40px">Service 안내</h2>
+
+      <div class="card-deck mb-3 text-center kl-card">
+        <div class="card mb-3 box-shadow">
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title" style="color:#ED3B0C">School</h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>바이올린</li>
+              <li>피아노</li>
+              <li>골프</li>
+              <li>테니스</li>
+              <li>도자기 공예</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-3 box-shadow">
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title" style="color:#ED3B0C">Teaching</h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>바이올린</li>
+              <li>피아노</li>
+              <li>골프</li>
+              <li>테니스</li>
+              <li>도자기 공예</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card mb-3 box-shadow">
+          <div class="card-body">
+            <h2 class="card-title pricing-card-title" style="color:#ED3B0C">CA</h2>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>바이올린</li>
+              <li>피아노</li>
+              <li>골프</li>
+              <li>테니스</li>
+              <li>도자기 공예</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<!--
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+--> 
+</main>
+
+{% endblock %}

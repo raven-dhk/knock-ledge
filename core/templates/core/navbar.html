@@ -1,0 +1,80 @@
+{% load static %}
+<style>
+  .kl-nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    top: 50%;
+  }
+  .kl-nav2{
+    padding-top: 7px;
+    top: 50%;
+  }
+  .kl-background-white{
+    background-color: #fff;
+  }
+  .kl-category{
+    color: #000;
+    font-size: small;
+    padding-top: 10px;
+  }
+  .kl-btn1{
+    background-color: transparent;
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-lg kl-background-white">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+            <img src="{% static '/images/Knock-ledge-logo1.svg' %}" alt="Logo" height="24">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle kl-category" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  전체 카테고리
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="row">
+              <form class="form" >
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="당신이 알고싶은 모든 지식" aria-label="search" style="padding-left: 20px; padding-right: 100px; margin-left:30px; border-radius: 40px;" id="mysearch">
+                    <div class="input-group-addon" style="margin-left: -50px; z-index: 3; border-radius: 40px; background-color: transparent; border:none; padding-top: 3px">
+                      <button class="btn btn-warning btn-sm" type="submit" style="border-radius: 20px;" id="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item kl-nav">
+            <a href="#" style="color:#ED3B0C">knoach</a>가 되고 싶은가요?
+        </li>
+        <li class="nav-item kl-nav2">
+          |  
+        </li>
+        <li class="nav-item kl-nav">
+          <a href="#" style="color:#ED3B0C">knoacker</a>가 되어보세요!
+        </li>
+
+        <button class="btn btn-danger navbar-btn" style="border-radius: 40px; padding-left:40px; padding-right:40px; background-color: #F77004;">로그인</button>
+      </ul>
+      
+    </div>
+  </nav>
