@@ -7,7 +7,10 @@ def main(request):
     return render(request, 'core/main.html')
 
 def school(request):
-    return HttpResponse('school')
+    return render(request, 'core/school.html')
 
-def message(request):
-    return HttpResponse('message')
+def teaching(request):
+    return render(request, 'core/teaching.html')
+
+def ca(request):
+    return render(request, 'core/ca.html')

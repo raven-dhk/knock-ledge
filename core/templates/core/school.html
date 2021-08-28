@@ -1,0 +1,122 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+.kl-banner {
+  background: url("{% static '/images/school-banner.png' %}") no-repeat center center; 
+  background-size: cover;
+  padding-top: 80px;
+  padding-left: 60px;
+  height: 240PX;
+  width: 100vw;
+}
+
+.kl-headertitle {
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+
+.kl-block  {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.kl-card-title {
+  padding-top: 50%;
+  padding-left: 15px;
+}
+.kl-card-format {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="center-block kl-banner">
+          <h2 style="color:white;">탁자와 과일 한 바구니와 바이올린.</h2>
+          <h2 style="color:white;">행복해지는데 그 밖에 뭐가 더 필요한가?</h2>
+          <p style="color: white;">- 아인슈타인 -</p>
+      </div>
+  </div>
+</div>
+
+<section">
+  <div class="kl-block">
+
+    <div class="kl-headertitle">
+      <h6>바이올린</h6>
+      <h5>당신의 Knoack 레벨을 알려주세요</h5>
+    </div>
+    
+    <div class="card-deck">
+      <div class="card">
+        <div class="row">
+            <div class="col-sm">
+            <div class="kl-card-title">
+              <h4>처음 시작하는</h4>
+              <h4>Explorer</h4>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="kl-card-title">
+              <img src="{% static '/images/schoolcard1.png' %}" alt="image" height="120px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+            <div class="col-sm">
+            <div class="kl-card-title">
+              <h4>스킬업을 꿈꾸는</h4>
+              <h4>Enjoyer</h4>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="kl-card-title">
+              <img src="{% static '/images/schoolcard2.png' %}" alt="image" height="120px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+            <div class="col-sm">
+            <div class="kl-card-title">
+              <h4>전공을 고려하는</h4>
+              <h4>Major Student</h4>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="kl-card-title">
+              <img src="{% static '/images/schoolcard3.png' %}" alt="image" height="120px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+            <div class="col-sm">
+            <div class="kl-card-title">
+              <h4>프로를 꿈꾸는</h4>
+              <h4>Aspirant</h4>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="kl-card-title">
+              <img src="{% static '/images/schoolcard4.png' %}" alt="image" height="120px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p></p>
+</section>
+
+{% endblock %}
